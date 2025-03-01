@@ -198,7 +198,8 @@ body{
     
 }
 .hero-img:hover{
-  box-shadow: 1px 1px 25px cyan;
+  box-shadow: 1px 1px 25px cyan,
+  3px 3px 30px rgb(127, 233, 233);
 cursor: pointer;
 }
 .hero-image{
@@ -225,21 +226,21 @@ hr{
     
 }
 .about{
-    width: 40%;
+    width: 50%;
     padding: 0 20px;
     position: relative;
 }
 .about h2{
     color: var(--white);
     font-size:3rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .about h2 span{
    color: var(--main-color);
 }
 .about p{
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 19px;
+    font-weight: 400;
    color: var(--white);
   
 }
@@ -250,7 +251,7 @@ hr{
    transform: rotate(180deg);
 }
 .about-img{
-    width: 60%;
+    width: 50%;
     position: relative;
     display: flex;
     align-items: center;
@@ -271,8 +272,7 @@ hr{
 }
 .skill-page{
     height: 100vh;
-    padding:30px;
-    margin-top: 50px;
+    padding: 0 30px;
 }
 .skill-page h1{
     font-size: 55px;
@@ -295,13 +295,13 @@ hr{
 .skill-section{
   height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
 
 .container {
-    width: 65%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -506,24 +506,24 @@ hr{
   }
 
  
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width:1024px) {
     
     .navbar{
       position: relative;
       z-index: 2;
-      padding: 10px;
+      padding: 30px;
       justify-content: space-between;
       align-items: center;
       height: 10vh;
 
     }
     .navbar h1{
-      font-size: 1.9rem;
+      font-size: 3.8rem;
     }
     .nav-list {
       background-color: #00acb5f6;
       position: absolute;
-      top: 120px;
+      top: 10vh;
       right: 0;
       opacity: 0;
       visibility: hidden;
@@ -543,6 +543,7 @@ hr{
       
     }
     .navbar i{
+      font-size: 3.8rem;
       display: block;
     }
     .nav-list a{
@@ -553,34 +554,33 @@ hr{
     }
     #Home{
       flex-direction: column-reverse;
-      justify-content: flex-start;
       gap: 0px;
       padding: 0;
 
     }
-    #Home a i {
+    #Home > a i {
       right: 20px;
-      font-size: 1.1rem;
+      font-size: 3rem;
     }
-    .left-section,.right-section{
+    .left-section{
       width: 100%;
-      height: 50%;
       margin: 0;
     }
-    .hero-img{
-      height: 200px;
-      width: 200px;
-      
+    
+    .right-section{
+      width: 100%;
+      margin: 0;
     }
     .hero-image{
-      height: 280px;
-      width: 280px;
+      height: 480px;
+      width: 480px;
       object-fit: cover;
       
     }
     .about-page{
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 2rem; 
     }
     .about{
       width: 100%;
@@ -588,15 +588,15 @@ hr{
     
     }
     .about h2{
-      font-size: 1.8rem;
+      font-size: 3.8rem;
       margin: 0;
     }
     .about p{
-      font-size: 0.85rem;
+      font-size: 1.85rem;
     }
     .absolute {
-      bottom: 0px;
-      width: 350px;
+      bottom: -170px;
+      width: 600px;
   }
   .about img {
     bottom: 0;
@@ -608,52 +608,59 @@ hr{
 
     .left-section p{
       text-align: center;
-      font-size: 1.1rem;
+      font-size: 2.3rem;
       margin: 0;
     }
     .left-section h4{
-      font-size: 1.2rem;
+      font-size: 2.8rem;
       text-align: center;
     }
     #detail{
-      font-size: 16px;
+      font-size: 30px;
       margin: 0;
-      line-height: 20px;
+      line-height: 40px;
+      font-weight: 400;
+    }
+    #typing{
+      font-size: 2.8rem;
     }
     .left-icon a i{
-      font-size: 1rem;
-      margin-right: 10px;
-      
+      font-size: 2.6rem;
   }
   .left-btn{
     gap: 20px;
 }
 .left-btn button{
-    font-size: 1rem;
+    font-size: 1.9rem;
     font-weight: 400;
     padding: 8px;
     border-radius: 10px;
  
 }
 .skill-page {
-  flex-direction: column;
+  margin:0;
 }
 .skill-section{
     flex-direction: column;
-    gap: 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
 }
-    #typing{
-      font-size: 1.2rem;
-    }
+.skill{
+  margin: 10px 0;
+  width: 100%;
+}
     .skills-img{
     width: 100%;
     }
     .skills-img img {
-      width: 40%;
+      width: 64%;
   }
   .container {
     width: 100%;
     margin: 0;
+    flex-direction: column;
+    
     
 }
 .progress-container {
@@ -661,10 +668,10 @@ hr{
   height: 30px;
 }
   .skill-name{
-      font-size: 1rem;
+      font-size: 2rem;
     }
     .skill-page h1{
-      font-size: 1.6rem;
+      font-size: 3.8rem;
     }
     .contact-page{
       justify-content: space-between;
@@ -681,11 +688,11 @@ hr{
       width: 100%;
     }
     .contact-left h2 {
-      font-size: 1.7rem;
+      font-size: 3.8rem;
   }
   .contact-left-img img {
     margin: 0;
-    width: 60%;
+    width: 100%;
     object-fit: cover;
 }
 .rotateimg {
@@ -714,23 +721,26 @@ hr{
       width: 100%;
     }
     .input-name h4{
-      font-size: 1rem;
+      font-size: 2.8rem;
     }
     .input-name input{
-      font-size: 1rem;
+      font-size: 1.9rem;
       width: 100%;
     }
     .input-btm{
       width: 100%;
     }
     .input-btm h4{
-      font-size: 1rem;
+      font-size: 2.8rem;
     }
      .input-area textarea {
         width: 100%;
         height: 400px;
-        font-size: 1rem;
+        font-size: 1.9rem;
        
+    }
+    .right-btn button{
+      font-size: 2rem;
     }
     
   }
@@ -743,17 +753,19 @@ hr{
       justify-content: space-between;
 
     }
+    .navbar i{
+      font-size: 1.9rem;
+    }
     .navbar h1{
       font-size: 1.9rem;
     }
     .nav-list{
       top: 10vh;
     }
-
  
-    #Home a i {
+    #Home > a i {
       right: 80%;
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
     .left-section,.right-section{
       width: 100%;
@@ -764,6 +776,10 @@ hr{
       width: 300px;
 
     }  
+    .hero-image{
+      height: 330px;
+      width: 330px;
+    }
     .about-page{
       padding: 0;
     }
@@ -773,21 +789,25 @@ hr{
       margin-bottom: 10px;
     }
     .about p{
-      font-size: 1rem;
+      font-size: 0.95rem;
+    }
+    .absolute{
+      width: 280px;
+      bottom: -30px;
     }
     .left-section p{
-      font-size: 1.7rem;
+      font-size: 1.3rem;
       font-weight: 600;
       margin: 0;
     }
     .left-section h4{
       font-size: 1.7rem;
       margin: 0;
-      
     }
     #detail{
       font-size: 15px;
       margin: 0;
+      line-height: 20px;
     }
   .left-icon{
     display: none;
@@ -803,6 +823,7 @@ hr{
     font-size:1.1rem;
     font-weight: 600;
 }
+
 .skill-page{
   padding: 0;
   justify-content: center;
@@ -819,6 +840,7 @@ hr{
   margin: 0;
 }
 .progress-container{
+  width: 100%;
   height: 25px;
 }
     #typing{
@@ -828,7 +850,7 @@ hr{
     width: 100%;
     }
     .skills-img img {
-      width: 65%;
+      width: 85%;
   }
   .container {
     width: 100%;
@@ -899,9 +921,11 @@ hr{
       font-size: 1rem;
      
   }
+  .right-btn button{
+    font-size: 1.2rem;
+  }
     
   }
 
- @media screen and (max-width:1000px) {
   
- }
+

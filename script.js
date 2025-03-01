@@ -22,7 +22,7 @@ animateProgressBar("#c-progress", 80);
 };
 
 const typed = new Typed('#element', {
-    strings:['Web Developer.', 'Freelancer .','Content Creater .','Student .'],
+    strings:['Web Developer.', 'Freelancer.','Content Creater.','Full Stack Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true,
@@ -113,14 +113,30 @@ const typed = new Typed('#element', {
   })
 
   function sendmail(){
-    let param = {
-      from_name: document.getElementById("name").value,
-      email_id: document.getElementById("email").value,
-      message: document.getElementById("message").value
+    let full_name =document.getElementById("name").value;
+    let email =document.getElementById("email").value;
+    let message =document.getElementById("message").value;
+
+    if(full_name != "" && email != "" && message != ""){
+
+      let param = {
+        from_name: full_name,
+        email_id:email,
+        message: message
+      }
+      emailjs.send("service_d15vino","template_dasllcf", param).then(function(res){
+        alert("success your message has been send ✔🚀 " + res.status);
+      })
+     
     }
-    emailjs.send("service_d15vino","template_dasllcf", param).then(function(res){
-      alert("success your message has been send ✔🚀 " + res.status);
-    })
+    else{
+      alert(`Input boxex are empty please enter your details,
+       😍😍😍 Thank You ❤❤😊`)
+      
+    }
+    full_name = "";
+    email = "";
+    message = "";
   }
 
   const nav_btn = document.querySelector(".navbar i");
