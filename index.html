@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="shortcut icon" href="asset/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Praduman_Gupta</title>
+</head>
+<body>
+        <div class="navbar">
+            <h1>Praduman</h1>
+            
+               <div class="nav-list " > 
+                <a href="#Home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skill">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <i id="nav-btn" class="ri-menu-line"></i>
+            
+        </div>
+    
+    <div id="Home">
+        <div class="left-section">
+            <div class="left-top">
+                <p>Hello, It's Me</p>
+            <h4>Praduman Gupta.</h4>
+            <p id="typing">And I'm a  <span id="element"></span> </p>
+            <p id="detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nostrum, necessitatibus fugit repudiandae rerum dicta repellat officia ducimus vel aspernatur adipisci soluta nobis error sequi praesentium obcaecati totam facilis vero?</p>
+            </div>
+           <div class="left-bottom">
+            <div class="left-icon">
+                <a href="https://www.instagram.com/code___with___ankit/?igsh=Y285MXk3MzFnZzBw&utm_source=qr"><i class="ri-instagram-line"></i></a>
+                <a target="_blank" href=""><i class="ri-whatsapp-line"></i></a>
+                <a target="_blank" href="https://github.com/C-W-Praduman"><i class="ri-github-line"></i></a>
+            </div>
+            <div class="left-btn">
+               <button id="download-btn">Download CV</button>
+               <button id="hire-btn">Hire Me</button>
+            </div>
+           </div>
+        </div>
+        <div class="right-section">
+            <div class="hero-img"></div>
+            <img class="hero-image" src="asset/doodles mixed round.png" alt="">
+        </div>
+        <a href="#about"><i class="ri-arrow-down-line"></i></a>
+    </div>
+    <hr>
+    <div id="about" class="about-page">
+        <div class="about">
+            <img src="asset/Vector 187.png" alt="">
+            <h2>About <span>Me</span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut nihil voluptas quasi labore veritatis deleniti ipsam id. Necessitatibus consequuntur repudiandae aspernatur quos eligendi esse iusto blanditiis explicabo ipsa cum minus amet similique odit architecto magni mollitia, maxime molestiae laboriosam accusantium voluptates deserunt? Id blanditiis consequatur consectetur voluptas nostrum delectus rem, magnam at perferendis? Rem, nihil quas earum eum voluptate neque tenetur deserunt quod pariatur! Velit alias tenetur, perspiciatis nesciunt doloremque nam distinctio tempora molestias itaque rerum eos cumque sequi ducimus?</p>
+        </div>
+        <div class="about-img">
+            <img class="absolute" src="asset/Group 62.png" alt="">
+            <img class="about-image" src="asset/doodle items.png" alt="">
+        </div>
+    </div>
+    <hr>
+    <div id="skill" class="skill-page">
+        
+        <h1>My <span>Skill</span></h1>
+        <div class="skill-section">
+            <div class="container">
+                <div class="skill">
+                    <div class="skill-name"> <i class="ri-html5-line"></i> HTML</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="html-progress"></div>
+                        <div class="progress-text" id="html-progress-text"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name"> <i class="ri-css3-fill"></i> CSS</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="css-progress"></div>
+                        <div class="progress-text" id="css-progress-text"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name"> <i class="ri-javascript-fill"></i> Javascript</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="js-progress"></div>
+                        <div class="progress-text" id="js-progress-text"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">  C-programming</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="c-progress"></div>
+                        <div class="progress-text" id="c-progress-text"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="asset/work.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div id="contact" class="contact-page">
+        
+            <div class="contact-left">
+                <h2>Got a project in <br> <span>mind?</span></h2>
+                <div class="contact-left-img">
+                    <img class="rotateimg" src="asset/Vector 186.png" alt="">
+                    <img src="asset/Group 2372.png" alt="">
+                </div>
+            </div>
+            <div class="contact-right">
+                    <div class="input-top">
+                        <div class="input-name">
+                            <h4>Your Name</h4>
+                            <input id="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="input-name">
+                            <h4>Your email</h4>
+                            <input id="email" type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="input-btm">
+                        <div class="input-area">
+                            <h4>Your message</h4>
+                           <textarea  id="message" placeholder="Message"></textarea>
+                        
+                        </div>
+                        
+                    </div>
+            </div>
+            <div class="right-btn">
+                <button onclick="sendmail()" type="submit" id="sendBtn" class="message-btn">Send Message  <i class="ri-send-plane-fill"></i></button>
+            </div>
+        
+    </div>
+    <hr>
+    <footer>
+        <div class="f-top">
+       <a href="#Home">  <i class="ri-home-3-line"></i> Home</a>
+             <a href="#about"><i class="ri-account-box-line"></i> About</a>
+            <a href="#contact"> <i class="ri-contacts-book-upload-line"></i>  Contact</a>
+        </div>
+        <div class="f-bottom">
+         <a href="https://www.instagram.com/code___with___ankit/?igsh=Y285MXk3MzFnZzBw&utm_source=qr"><i class="ri-instagram-line"></i></a>
+        <a href=""> <i class="ri-whatsapp-line"></i></a>
+        <a target="_blank" href="https://github.com/C-W-Praduman"> <i class="ri-github-line"></i></a>
+        </div>
+        <p>&copy Praduman Gupta</p>
+        <p>Terms of service - privacy Policy</p>
+    </footer>
+
+
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "b7mFVl88BhqFgQiZ2",
+            });
+    })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

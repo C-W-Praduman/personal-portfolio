@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    background-color: var(--background);
+}
+:root{
+    --main-color : #00ADB5;
+    --background : #393E46;
+    --white: #EEEEEE;
+}
+.navbar{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    border-bottom: 1px solid var(--main-color);
+}
+.navbar h1{
+    font-size:2.6rem;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+ .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    
+}
+ .nav-list a {
+    transition: all 0.2s ease-in-out;
+}
+
+ .nav-list a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 2px;
+   
+}
+ .nav-list a:hover{
+    color: var(--background);
+    background-color: cyan;
+    box-shadow: 0px 0px 20px var(--main-color),
+    1px 1px 25px cyan;
+    transform: translateY(-5PX);
+}
+.navbar i{
+    color: var(--main-color);
+    font-size: 2rem;
+    display: none;
+}
+
+#Home{
+    height: 90vh;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+
+}
+#Home > a i{
+    font-size: 3rem;
+    color: var(--white);
+    position: absolute;
+    bottom: 10px;
+    background-color: rgb(90, 88, 88);
+    cursor: pointer;
+}
+.left-section{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.left-top{
+    margin-bottom: 20px;
+}
+.left-section p{
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.left-section p span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+#typing{
+    font-size: 2.5rem;
+}
+.left-section h4{
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: var(--white);
+}
+#detail{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.left-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-icon a i{
+    font-size: 1.4rem;
+    margin-right: 30px;
+    border: 2px solid var(--main-color);
+    padding: 5px;
+    border-radius: 100%;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.2s ease;
+}
+.left-icon a i:hover{
+    background-color: cyan;
+    color: var(--background);
+    box-shadow: 0px 0px 20px var(--main-color),
+    1px 1px 25px cyan;
+}
+
+.left-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.left-btn button{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.left-btn button:active{
+    opacity: 0.7;
+}
+.left-btn button:hover{
+    background-color: cyan;
+    color: var(--background);
+    box-shadow: 0px 0px 20px var(--main-color),
+    1px 1px 25px cyan;
+}
+#download-btn{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+#hire-btn{
+    background-color: rgba(0, 0, 0, 0.479);
+    color: var(--white);
+}
+.right-section{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero-img{
+    background-image: url(asset/praduman.jpg);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease-in-out;
+    
+}
+.hero-img:hover{
+  box-shadow: 1px 1px 25px cyan;
+cursor: pointer;
+}
+.hero-image{
+   height: 90%;
+   width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+hr{
+    margin: 0 100px;
+    background-color: rgb(0, 174, 255);
+    border: none;
+    height: 2px;
+}
+.about-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding:  20px;
+    
+}
+.about{
+    width: 40%;
+    padding: 0 20px;
+    position: relative;
+}
+.about h2{
+    color: var(--white);
+    font-size:3rem;
+    margin-bottom: 20px;
+}
+.about h2 span{
+   color: var(--main-color);
+}
+.about p{
+    font-size: 18px;
+    font-weight: 300;
+   color: var(--white);
+  
+}
+.about img{
+   position: absolute;
+   bottom: 10px ;
+   right: -150px;
+   transform: rotate(180deg);
+}
+.about-img{
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-image{
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
+
+}
+.absolute{
+    position: absolute;
+    bottom: -100px;
+    width: 300px;
+    filter: drop-shadow(0px 4px 4px #000);
+
+}
+.skill-page{
+    height: 100vh;
+    padding:30px;
+    margin-top: 50px;
+}
+.skill-page h1{
+    font-size: 55px;
+    color: #EEEEEE;
+    text-align: center;
+}
+.skill-page h1 span{
+    color: #00ADB5;
+
+}
+.contact-page h1 span{
+    color: #00ADB5;
+}
+.contact-page h1 {
+  font-size: 55px;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.skill-section{
+  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.container {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .skill {
+    margin: 20px 0;
+  }
+  
+  .skill-name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: cyan;
+  }
+  
+  .skill-name i {
+    font-size: 2.5rem;
+    
+    margin-bottom: 5px;
+    color: cyan;
+  }
+  
+  .progress-container {
+    width: 25vw;
+    height: 30px;
+    background: #a5d5d8;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(40deg,cyan, #00ADB5); /* Gradient from cyan to light blue */
+    transition: width 2s linear;
+    border-radius: 15px;
+  }
+  
+  .progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#393E46;
+  }
+  .skills-img{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-img img{
+    width: 100%;
+    object-fit: cover;
+
+
+  }
+  .contact-page{
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
+  .contact-left{
+    width: 50%;
+    display: flex;
+  }
+  .contact-left h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 20px;
+    text-align: start;
+  }
+  .contact-left h2 span{
+    
+    color: var(--main-color);
+   
+  }
+  
+  .contact-left-img img {
+   margin: 0 60px;
+  }
+  .rotateimg{
+    transform: rotate(-70deg);
+  }
+  .contact-right{
+    width: 50%;
+    padding: 20px;
+  }
+  .input-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-bottom: 30px;
+  }
+  .input-name h4{
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 5px;
+  }
+  .input-name input{
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        background-color: #1e1e1e8a;
+        outline: none;
+        color: var(--white);
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  }
+
+ 
+  .input-area h4{
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 5px;
+  }
+  .input-area textarea{
+    width: 100%;
+    height: 300px;
+    font-size: 1.2rem;
+    font-weight: 400;
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        background-color: #1e1e1e8a;
+        outline: none;
+        color: var(--white);
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  }
+  .right-btn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--main-color);
+    padding: 8px;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .right-btn button:hover{
+    box-shadow: 0px 0px 25px var(--main-color),
+    1px 1px 25px cyan;
+  }
+  .right-btn button:active{
+   opacity: 0.8;
+  }
+
+  footer{
+    height: 40vh;
+    background-color: var(--main-color);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .f-top a{
+    margin: 0 10px;
+    font-size: 21px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+  .f-bottom i {
+    margin: 0 30px;
+    text-decoration: none;
+  }
+  .f-bottom i {
+   color: rgb(255, 255, 255);
+   font-size: 21px;
+   background-color: var(--background);
+   padding: 12px;
+   border-radius: 50%;
+   cursor: pointer;
+  }
+  footer p{
+    text-align: end;
+  }
+
+ 
+  @media screen and (max-width:1000px) {
+    
+    .navbar{
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+
+    }
+    .navbar h1{
+      font-size: 1.9rem;
+    }
+    .nav-list {
+      background-color: #00acb5f6;
+      position: absolute;
+      top: 120px;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      align-items: center;
+      gap: 60px;
+      max-height: 0;
+      width: 100%;
+      flex-direction: column;
+      padding: 100px 0;
+      overflow: hidden; /* Extra content hide karne ke liye */
+      transition: opacity 0.5s ease, max-height 0.5s ease;
+    }
+    .nav-list.navon {
+      opacity: 1;
+      visibility: visible;
+      max-height: 80vh;
+      
+    }
+    .navbar i{
+      display: block;
+    }
+    .nav-list a{
+      font-size: 1rem;
+      font-weight: 400;
+      border-bottom: 2px solid white ;
+      padding-bottom: 10px;
+    }
+    #Home{
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      gap: 0px;
+      padding: 0;
+
+    }
+    #Home a i {
+      right: 20px;
+      font-size: 1.1rem;
+    }
+    .left-section,.right-section{
+      width: 100%;
+      height: 50%;
+      margin: 0;
+    }
+    .hero-img{
+      height: 200px;
+      width: 200px;
+      
+    }
+    .hero-image{
+      height: 280px;
+      width: 280px;
+      object-fit: cover;
+      
+    }
+    .about-page{
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .about{
+      width: 100%;
+      text-align: center;
+    
+    }
+    .about h2{
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    .about p{
+      font-size: 0.85rem;
+    }
+    .absolute {
+      bottom: 0px;
+      width: 350px;
+  }
+  .about img {
+    bottom: 0;
+    right: 0;
+}
+    .about-image{
+      width: 100%;
+    }
+
+    .left-section p{
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .left-section h4{
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    #detail{
+      font-size: 16px;
+      margin: 0;
+      line-height: 20px;
+    }
+    .left-icon a i{
+      font-size: 1rem;
+      margin-right: 10px;
+      
+  }
+  .left-btn{
+    gap: 20px;
+}
+.left-btn button{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 10px;
+ 
+}
+.skill-page {
+  flex-direction: column;
+}
+.skill-section{
+    flex-direction: column;
+    gap: 0;
+}
+    #typing{
+      font-size: 1.2rem;
+    }
+    .skills-img{
+    width: 100%;
+    }
+    .skills-img img {
+      width: 40%;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    
+}
+.progress-container {
+  width: 80%;
+  height: 30px;
+}
+  .skill-name{
+      font-size: 1rem;
+    }
+    .skill-page h1{
+      font-size: 1.6rem;
+    }
+    .contact-page{
+      justify-content: space-between;
+      padding: 15px;
+      flex-direction: column;
+    }
+    .contact-page h1 {
+      font-size: 2rem;
+    }
+    .contact-left{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .contact-left h2 {
+      font-size: 1.7rem;
+  }
+  .contact-left-img img {
+    margin: 0;
+    width: 60%;
+    object-fit: cover;
+}
+.rotateimg {
+ display: block;
+}
+    .contact-left-img{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .contact-right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px;
+  }
+    .input-top {
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      margin: 0;
+  }
+    .input-name{
+      width: 100%;
+    }
+    .input-name h4{
+      font-size: 1rem;
+    }
+    .input-name input{
+      font-size: 1rem;
+      width: 100%;
+    }
+    .input-btm{
+      width: 100%;
+    }
+    .input-btm h4{
+      font-size: 1rem;
+    }
+     .input-area textarea {
+        width: 100%;
+        height: 400px;
+        font-size: 1rem;
+       
+    }
+    
+  }
+  @media screen and (max-width:700px) {
+    
+    .navbar{
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+      justify-content: space-between;
+
+    }
+    .navbar h1{
+      font-size: 1.9rem;
+    }
+    .nav-list{
+      top: 10vh;
+    }
+
+ 
+    #Home a i {
+      right: 80%;
+      font-size: 3rem;
+    }
+    .left-section,.right-section{
+      width: 100%;
+      margin: 0;
+    }
+    .hero-img{
+      height: 300px;
+      width: 300px;
+
+    }  
+    .about-page{
+      padding: 0;
+    }
+    
+    .about h2{
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .about p{
+      font-size: 1rem;
+    }
+    .left-section p{
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .left-section h4{
+      font-size: 1.7rem;
+      margin: 0;
+      
+    }
+    #detail{
+      font-size: 15px;
+      margin: 0;
+    }
+  .left-icon{
+    display: none;
+  }
+  .left-btn{
+    gap: 18px;
+    margin-left: 20px ;
+}
+hr{
+  margin: 5px;
+}
+.left-btn button{
+    font-size:1.1rem;
+    font-weight: 600;
+}
+.skill-page{
+  padding: 0;
+  justify-content: center;
+}
+.skill{
+  width: 80%;
+}
+.skill-name{
+  font-size: 1rem;
+  margin: 0;
+}
+.skill-name i{
+  font-size: 1rem;
+  margin: 0;
+}
+.progress-container{
+  height: 25px;
+}
+    #typing{
+      font-size: 1.56rem;
+    }
+    .skills-img{
+    width: 100%;
+    }
+    .skills-img img {
+      width: 65%;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+  flex-direction: column;
+  gap: 0;
+}
+    .skill-page h1{
+      font-size: 2rem;
+    }
+    
+    .contact-page{
+      justify-content: flex-start;
+      padding: 0;
+      flex-direction: column;
+    }
+    .contact-left{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .contact-left h2 {
+      font-size: 2rem;
+  }
+  .contact-left-img img {
+    margin: 0;
+    width: 60%;
+    object-fit: cover;
+}
+.rotateimg {
+ display: block;
+}
+    
+    .contact-right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px;
+  }
+    .input-top {
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      margin: 0;
+  }
+    .input-name{
+      width: 100%;
+    }
+    .input-name h4{
+      font-size: 1rem;
+    }
+    .input-name input{
+      font-size: 1rem;
+      width: 100%;
+    }
+    .input-btm{
+      width: 100%;
+    }
+    .input-btm h4{
+      font-size: 1rem;
+    }
+    .input-area textarea {
+      width: 100%;
+      height: 160px;
+      font-size: 1rem;
+     
+  }
+    
+  }
+
+ @media screen and (max-width:1000px) {
+  
+ }
