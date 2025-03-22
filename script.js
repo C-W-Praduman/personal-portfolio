@@ -156,3 +156,13 @@ if(flag){
   
   
  })
+
+ // popup showing
+
+ let popup = document.querySelector(".absolute-contact");
+ let hire_btn = document.querySelector("#hire-btn");
+
+ hire_btn.addEventListener("click", ()=>{
+   popup.classList.toggle("popup_show")
+  
+ })
